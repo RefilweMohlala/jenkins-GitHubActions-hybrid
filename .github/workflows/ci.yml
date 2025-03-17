@@ -32,3 +32,8 @@ jobs:
         source venv/bin/activate
         pytest test_app.py
 
+    - name: Trigger Jenkins Job (If Tests Pass)
+      if: success()  
+      run: |
+        curl -X POST http://44.205.255.56:8080/job/python-ci/build \
+        --user JENKINS_USER:TOKEN
