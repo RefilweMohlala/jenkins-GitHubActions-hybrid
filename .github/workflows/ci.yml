@@ -30,9 +30,5 @@ jobs:
     - name: Run Tests
       run: |
         source venv/bin/activate
-        pytest tests/test_app.py
+        pytest test_app.py
 
-    - name: Deploy to Server (Optional)
-      run: |
-        echo "Deploying to server..."
-        # Add your deployment commands here (e.g., SSH to your server or SCP to deploy the app)
