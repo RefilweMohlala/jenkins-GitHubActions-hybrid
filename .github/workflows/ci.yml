@@ -36,4 +36,4 @@ jobs:
       if: success()  
       run: |
         curl -X POST http://44.205.255.56:8080/job/python-ci/build \
-        --user refilwe:11ca7261ad90db6800f3bc717d447dff93
+        --user admin:11ca7261ad90db6800f3bc717d447dff93
